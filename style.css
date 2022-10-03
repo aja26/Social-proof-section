@@ -29,7 +29,6 @@ body{
 main{
     margin: auto;
     width: 70vw;
-    border: 1px solid red;
     display: grid;
     align-items: center;
     height: 100vh;
@@ -42,57 +41,189 @@ section{
 section.top{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 7vw;
+}
+
+section.top p{
+    font-size: 1.25rem;
+    color: var(--dark-grayish-magenta);
+    margin: 1.75rem 0;
+    line-height: 1.75rem;
+}
+
+section.top .col.right p{
+    margin: 0;
+    color: var(--very-dark-magenta);
+    line-height: 1rem;
+    font-size: 1.1rem;
 }
 
 h1{
     color: var(--very-dark-magenta);
-    font-size: 4rem;
+    font-size: 4vw;
+    line-height: 4vw;
+}
+
+.col.right{
+    margin:  2rem 0;
+}
+
+.stars{
+    height: 1rem;
+}
+
+.rev1, .rev2, .rev3{
+    position: relative;
+}
+
+.rev1 { left: 1rem;}
+.rev2 { left: 3rem;}
+.rev3 { left: 5rem;}
+
+
+p {
+    font-size: 1.1rem;
 }
 
 span{
     background-color: var(--light-grayish-magenta);
-    width: 24rem;
+    width: 25rem;
     display: grid;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     padding: 1rem;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1rem;
+
 }
 
 section.bottom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3rem;
-    top: -10rem;
-position: relative;
+    grid-gap: 2rem;
+    top: -20rem;
+    position: relative;
 }
 
 .box{
     background-color: var(--very-dark-magenta);
     border-radius: 0.5rem;
     padding: 2rem;
+    width: 22vw;
 }
 
 .box img{
     border-radius: 50%;
     display: inline-block;
-    width: 10%;
+    width: 2.25rem;
+    margin-right: 1rem;
+}
+
+.box .title{
+    display: inline-block;
 }
 
 .box h2{
     color: var(--white);
-    display: inline-block;
     font-size: 1rem;
 }
 
 .box h3{
     color: var(--soft-pink);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
 .box p{
-    color: var(--white);
+    color: var(--light-grayish-magenta);
     font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.one, .two, .three{
+    position: relative;
+}
+
+.bottom .one { top: 1rem;}
+.bottom .two { top: 2rem;}
+.bottom .three { top: 3rem;}
+
+
+@media (min-width:1700px){
+    h1{
+        font-size: 4.25rem;
+        line-height: 4rem;
+    }
+
+    .box{
+        width: 380px;
+    }
+}
+
+@media (max-width:1000px){
+
+    body{
+        background-position: right 18vw bottom 88vh, left 0vw top 29vh;
+    }
+
+    main{
+        width: 90vw;
+        height: 100%;
+        margin: 1.5rem auto 3.5rem;
+    }
+
+    .col.right{
+        margin: 0rem;
+    }
+
+    section.top, section.bottom{
+        grid-template-columns: 1fr;
+    }
+
+    h1{
+        font-size: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        margin: 2.5rem 0 0 0;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    section.bottom{
+        top: 0rem;
+        grid-gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    span{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .stars{
+        text-align: center;
+    }
+
+    .rev1, .rev2, .rev3{
+        left: 0rem;
+    }
+
+    section{
+        margin:0.5rem;
+    }
+
+    section.top p{
+        margin: 1rem 0rem 0rem;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .box p{
+        text-align: left;
+    }
 }
