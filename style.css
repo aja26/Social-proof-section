@@ -23,19 +23,17 @@ body{
     font-family: 'League Spartan', sans-serif;
     background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
     background-repeat: no-repeat;
-    background-position: right 65vw bottom 80vh, left 40vw top 49vh;
+    background-position: right 65vw bottom 88vh, left 40vw top 49vh;
 }
 
 main{
-    margin: auto;
+    margin: 5rem auto;
     width: 70vw;
-    display: grid;
-    align-items: center;
     height: 100vh;
 }
 
 section{
-    margin: 1rem 0;
+    margin: 2.5rem 0;
 }
 
 section.top{
@@ -101,7 +99,6 @@ section.bottom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
-    top: -20rem;
     position: relative;
 }
 
