@@ -83,7 +83,7 @@ p {
     font-size: 1.1rem;
 }
 
-article{
+figure.review{
     background-color: var(--light-grayish-magenta);
     width: 25rem;
     display: grid;
@@ -199,7 +199,7 @@ article.box p{
         margin-bottom: 2rem;
     }
 
-    article{
+    figure.review{
         grid-template-columns: 1fr;
         width: 100%;
     }
