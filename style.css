@@ -28,7 +28,7 @@ body{
 
 main{
     margin: 5rem auto;
-    width: 80vw;
+    width: 85vw;
     height: 100vh;
 }
 
@@ -39,7 +39,7 @@ section{
 section.top{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 4vw;
+    grid-gap: 2.5vw;
 }
 
 section.top p{
@@ -58,7 +58,7 @@ section.top .col.right p{
 
 h1{
     color: var(--very-dark-magenta);
-    font-size: 4.5vw;
+    font-size: 4.8vw;
     line-height: 4vw;
 }
 
@@ -85,11 +85,11 @@ p {
 
 figure.review{
     background-color: var(--light-grayish-magenta);
-    width: 25rem;
+    width: 26rem;
     display: grid;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 1.25rem;
     grid-template-columns: 1fr 2fr;
     grid-gap: 0.5rem;
 }
@@ -153,7 +153,7 @@ article.box p{
 
 @media (min-width:1700px){
     h1{
-        font-size: 4.5rem;
+        font-size: 5rem;
         line-height: 4rem;
     }
 
