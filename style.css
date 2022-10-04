@@ -94,6 +94,11 @@ article{
     grid-gap: 0.5rem;
 }
 
+article.box{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 section.bottom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -101,36 +106,36 @@ section.bottom{
     position: relative;
 }
 
-.box{
+article.box{
     background-color: var(--very-dark-magenta);
     border-radius: 0.5rem;
     padding: 2rem;
     width: 24vw;
 }
 
-.box img{
+article.box img{
     border-radius: 50%;
     display: inline-block;
     width: 2.25rem;
     margin-right: 1rem;
 }
 
-.box .title{
+article.box .title{
     display: inline-block;
 }
 
-.box h2{
+article.box h2{
     color: var(--white);
     font-size: 1rem;
 }
 
-.box h3{
+article.box h3{
     color: var(--soft-pink);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
 }
 
-.box p{
+article.box p{
     color: var(--light-grayish-magenta);
     font-weight: 400;
     font-size: 1rem;
@@ -152,7 +157,7 @@ section.bottom{
         line-height: 4rem;
     }
 
-    .box{
+    article.box{
         width: 380px;
     }
 }
@@ -215,11 +220,11 @@ section.bottom{
         margin: 1rem 0rem 0rem;
     }
 
-    .box{
+    article.box{
         width: 100%;
     }
 
-    .box p{
+    article.box p{
         text-align: left;
     }
 }
